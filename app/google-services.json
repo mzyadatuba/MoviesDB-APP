@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "873581112258",
+    "firebase_url": "https://careemassignmentaac.firebaseio.com",
+    "project_id": "careemassignmentaac",
+    "storage_bucket": "careemassignmentaac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873581112258:android:e2d9a9e671bce592",
+        "android_client_info": {
+          "package_name": "assignment.imdb.com.careemassignmentaac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873581112258-7kce4jqo95fh8elop3t639d8i1g8v3of.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "assignment.imdb.com.careemassignmentaac",
+            "certificate_hash": "e3da154c1cd74b070acf39dfe160e7d3ccb129de"
+          }
+        },
+        {
+          "client_id": "873581112258-i5ck1fnidnshho8uf0uddej3mviodela.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzTgdsD4xXVkxJUIZbdk8QG0pFFmizaWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873581112258-i5ck1fnidnshho8uf0uddej3mviodela.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieDB-APP</string>
+    <string name="loading_hint">loading ...</string>
+    <string name="cd_movies_list">Movies list</string>
+    <string name="run_time">Run Time</string>
+    <string name="revenue">Revenue</string>
+    <string name="vote_count">Vote Count</string>
+    <string name="extra_info">Extra Info</string>
+    <string name="overview">overview</string>
+    <string name="load_next">Load Next Page ..</string>
+    <string name="total_results">Total Results :</string>
+    <string name="page_number">Page Number :</string>
+    <string name="def_total_results">Total Results : 0</string>
+    <string name="def_page_number">Page Number : 0</string>
+    <string name="filter_by_date">Filter by date</string>
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="remove_filter_message">The movies filter has been cleared!</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <defaultsMap>
+        <entry>
+            <key>api_base_url</key>
+            <value>https://api.themoviedb.org/3/</value>
+        </entry>
+        <entry>
+            <key>api_auth_key</key>
+            <value>aa41b26137ac3dcc4f90620914b4bd13</value>
+        </entry>
+        <entry>
+            <key>api_auth_cache_exp</key>
+            <value>0</value>
+        </entry>
+    </defaultsMap>
+</resources>

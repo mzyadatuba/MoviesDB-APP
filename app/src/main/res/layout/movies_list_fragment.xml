@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="isLoading"
+            type="boolean"/>
+
+        <variable
+            name="moveList"
+            type="assignment.imdb.com.careemassignmentaac.ui.MovieListFragment"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
+                <TextView
+                    android:id="@+id/tv_totalResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    android:text=" / "/>
+                <TextView
+                    android:id="@+id/tv_pageNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="3dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_clearFilter"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="CLEAR FILTER"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:onClickListener="@{moveList::onClearFilterClicked}"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loading_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/loading_hint"
+            android:textAlignment="center"
+            android:visibility="gone"/>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/movies_list"
+                android:contentDescription="@string/cd_movies_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_filter_list_white_48dp"
+                app:layout_anchor="@id/movies_list"
+                app:layout_anchorGravity="bottom|right|end"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:onClick="@{moveList::onFilterClicked}"/>
+        </android.support.design.widget.CoordinatorLayout>
+
+    </LinearLayout>
+</layout>
