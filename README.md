@@ -22,6 +22,7 @@ Design Pattern:
 The application designed based on MVVM (Model View View Model) design pattern.
 
 Used Architectural Components / Dependences 
+
 Data Binding for binding UI to data source
 Room DB for local caching
 Lifecycle for Live Data / View Modeling 
